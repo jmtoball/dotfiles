@@ -22,7 +22,8 @@ autoload -Uz compinit
 compinit
 
 # completion: host
-local _myhosts
-_myhosts=( ${${${${(f)"$(<$HOME/.ssh/known_hosts)"}:#[0-9]*}%%\ *}%%,*} )
-zstyle ':completion:*' hosts $_myhosts
- 
+if [ -e "$HOME/.ssh/known_hosts" ]; then
+  local _myhosts
+  _myhosts=( ${${${${(f)"$(<$HOME/.ssh/known_hosts)"}:#[0-9]*}%%\ *}%%,*} )
+  zstyle ':completion:*' hosts $_myhosts
+fi 
