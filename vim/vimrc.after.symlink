@@ -1,2 +1,9 @@
 set hidden
 colorscheme ir_black
+
+" Statusbar
+set statusline=%t "filename
+set statusline+=\ %m "readable
+set statusline+=\ %r "modified
+set statusline+=%=%y "filetype
+set statusline+=\ %l:%c/%L "line:col/total
