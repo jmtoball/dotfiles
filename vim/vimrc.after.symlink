@@ -6,4 +6,5 @@ set statusline=%t "filename
 set statusline+=\ %m "readable
 set statusline+=\ %r "modified
 set statusline+=%=%y "filetype
+set statusline+=[%{&fenc}] "filetype
 set statusline+=\ %l:%c/%L "line:col/total
