@@ -6,4 +6,4 @@
 	name = Johannes Maximilian Toball
 	email = code@gedankenacker.de
 [push]
-	default = simple
+	default = current
