@@ -24,6 +24,12 @@ if filereadable(expand("~/.vimrc.before"))
   source ~/.vimrc.before
 endif
 
+""
+"" Highlight hamlc aas haml
+""
+au BufRead,BufNewFile *.hamlc set ft=haml
+
+
 
 " Disable plugins prior to loading pathogen
 exe 'source ' . g:janus_vim_path . '/core/plugins.vim'
