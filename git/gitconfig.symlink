@@ -1,0 +1,9 @@
+[color]
+  ui = true
+[core]
+	editor = vi
+[user]
+	name = Johannes Maximilian Toball
+	email = code@gedankenacker.de
+[push]
+	default = simple
